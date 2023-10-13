@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>STD RIAV</title>
+  <style>
+    .image-container {
+      text-align: center;
+    }
+    .image-container img {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+  <script>
+    function cambiarImagen(numero) {
+      var imagen = document.getElementById('imagen' + numero);
+      imagen.style.display = 'block';
+      for (var i = 1; i <= 3; i++) {
+        if (i !== numero) {
+          document.getElementById('imagen' + i).style.display = 'none';
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="image-container">
+    <img id="imagen1" src="https://lh3.googleusercontent.com/pw/ADCreHc6NTBgOi_PWf4vq5MaHfgEiCSurELWqDc_5XLaKOf4xiW63FvuAaqo_GXieL4CCIJdNWTTsdJDDC4Dgbm6MNR3oq7DVqIQevvBk64WI4jxHsnioSVXahhJW4ADk5-pypc5YjiWx4nz68oFwLKiWmvESZrx51IB08LyYW7HJ6skjU497p_W_LidrgbYsYXS9Qv3WsQS9oAzHoLKjqtrLR9Hgfs9XIso7s4MFdbrqFMbKVpFjvsNxb2vny_2nXRB_bx-n2C8TQ79CRkSroyds82zNXX7PSTR3dEC4-0dmqgFDZn7cyzpl20vOgQWLZuABgAMqpGRdYuHC5fcmGJh68GtKoWTZ-JT_fTx1ykvEj57zZBoXlUH5FdfS11VPTSC9PmDZ0Fl6j2J7qK5o5ItdU30qByDCPmNKJ8LiIjVem4dPb1aUngD-H8ou5h97dMruyPUyYaCmguklMO4OP_rgMgxqAf32FN-Si6HYY7rDvd0RXKdbkGJinPf2KmQqW_C2CkksHSAx7143z6PMje_cTU61V0JHoi3gr85HRQcZ8Pga1sBy7lCgLLI7jHifk-gw68r7_MkUMNK3dVWSmmjHBtTuQGbMg9mowy9I22TCFL4ryRyUgAr5NuiSpmOXsmKsoJPhyUlsoZ1p53_XMffu7dSjW_iN_0gzC78zMovn67uvtGOuO6ay1xiwvgqYqXEjV9C0CyS-TRvQ7A1OklreItpKTeRMQmk5x_SsN-SemA1Cq_1WjVFKVjgAhS4cJKsTxqPSBlidkRQLxsD4318Mmp4xAnufjjmcdx3TZSKe1Ky2As6GhoqTCDByob1jyur5X-7E-cFlyF-neDm8rF4oGfEUobSjj5Xv1OuJwzwqvwu2r71fl_T8lGOMPooLs6seoBtvJF0Ysm2FfaAmInI9bTffv_0XG7iE4iEiF3xqrHq1TR9R76kO1iKBpMprhQouNKY1vduPORy6fBKT7UyDen1bzPAFg=w969-h1292-s-no?authuser=1" alt="Imagen 1" style="cursor: pointer;" onclick="cambiarImagen(2);">
+    <img id="imagen2" src="https://lh3.googleusercontent.com/pw/ADCreHc19cOFpeD1kkWzxRPGPBu8WseWNDr9lw-wzJl8vM57_i2k5SNntkWr3zKGzYm234Lak2lmpSmAfqtYbdIMx_Dt9PUJd4hy6Sk_Kw111kp1GjNNuLEMmXn2abpo7Z-SspFvMaJ6gBLmAETSXEEdgOXAuuA61as6zUv-To6wTesCVHEnm_aA0Yp2odkLp6A-9qC1hRN8Vn68N_FCvLTaD6ASSt8AsDjYG_I2gMmMXlNZ46MkUsaaMyb3du1YaHolcIJOCk3qlmqgBQJwpMmSj6BvV3eDEpn63GJ-KCk8671ULG2K8kaHV1ZfJTHfibTJUr5lXCguhZ2dnabSihi2y1hRq5HY20Qaq1ERJdQp9DRlzUUFkm8Bs4THnx6Vqj64vx5_fJrDDAXpS7S_TTnRX-BPTxPe0L1OCPlLZsbo5cif85hhqRsYPrLOZQz__QqU2spPSEtGcpiqaudTegVgarGejWFJCLqV55E45y3FEZaSNguCQ8TLde544IKLfn5KjTFUNwZdXGO8HBmgxQ4caHCLBjEMjxseOEWF31hSYSninl4SzTJgVcshZmn5Umhv1_quKTuv_EzmfYeTpycb-q1Pr_Q-uYVPsPtNxQ-jzgDkcVy_eMPf8sSIUYf6F2hl5VRWlBZO28g2LGanRZHA-7BHp9gMDx6bk6Srn_vZMy0PrODHu_4IVOr4AWbrMmriQZtZ4SP1vbIfWR_9W6ofhoAgo6hlSiEj9munrpvDq9ldBkyj8TC4FUOwQGiTm_YGYElqqOqPznzR-5_QO6wYU4HncklWs39f12yRYRTFYMFlehBZQcq9BJxk6mxukqywsrjfQX9jB0lgIm99Hw2G5YTCDtuVmjZh5AqAebguHP-SD54xK3gT10qY9aiMXuB7rfzxs1kzgIwBuXg48wsIpj1a5LLMURCIIYH0tO6lHDfOwebJtgJRUvYCOw_P9hD-KHbqKSAPjIa_MkJ1cclYsiUYEPifLw=w970-h1292-s-no?authuser=1" alt="Imagen 2" style="cursor: pointer; display: none;" onclick="cambiarImagen(3);">
+    <img id="imagen3" src="https://lh3.googleusercontent.com/pw/ADCreHfRRBNY4zSIn2cPMwAfCFo4sbXYaftkrXSrcJgZMKeuq1h3A9PqNpibReHcBj9RuJ-UbhVDTol6GZIFFlXlIbuZvH229L4SvOgqpjDjNRIxHXMoQzMjtjGwKaUa5NkvnN-hIQlGs0mxdAyahYJU5fCI1NszTSAtMqDdQ5luYyFKfcHoBy8qYksQWCMQw4g_1fb00UjgDnaNlkDDRbzUMKGivDzPZinVv26b8PJL9iufb1-KdEGPzXNjohSRPiYKqIdGwNDj9Bt6nb-yBJ71EvVFwkcLAQlthUbaeu1cWFnEgigZc0VqhHBxAhTASvPDJV6C6qEa5iMmqOuYwdqFENa_4xhIAAKi4O1P0NtBO8cMl8M2E-VfksgGaxfSvYJdrJRx6e1UkFUTbwLzoLfu8STtIeLKVm4iqrByjCfLVFYoPCgteuSUSOD_riqI7Jz4PPHGowQWo0b20S1EPlDMPlL11-GLjto-lym3KiH_Q_oOIjku8AiuSnjd6HHOe_MUrHB63KWGkSDLohaSt5JWW8Ms631Dg7n82sNOu_CyySH20FkTTQVNiAxHsSezvi1TlfIX4FxAMe01rmwQGZSPNsSFZ_3rZZ4PeTw52w3omx_q3hRhbOTEoxywNiAYbuugWtFNvC8OFZNV1NX6PaFgrPJaObErm2s7iX7zuzx3BpHf2jDxaN3YmTn_L2q8Xelj5NCJZUQSJ3zvfGeaYYzvO9Nxr644jTiO7QjEFVG2LQSBMTxHtn3F5I4hkIBMOIqsh2JzWQ2DPT9WnOMUm1yNGS6DihTv8P2Jcogym0Krb_YZx_hTxtwchRCPnfOXpI2lBYImoazuFp7xxoelKfNIhnhJjjyOvTZGrKfiEIvoGSs3RAajMx3va0AB2519Erusnjri1ac3L49aOV08I87KjTkSq0h-qMFUDQ6JFKb69vCANvg0xtfPuB2rwr3tZF349IEi92s6R8d7QSq7uX8aGxNQQqsetQ=w962-h1282-s-no?authuser=1" alt="Imagen 3" style="cursor: pointer; display: none;">
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
